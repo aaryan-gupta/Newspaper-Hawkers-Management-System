@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.Dashboard">
+   <children>
+      <Label layoutX="231.0" layoutY="14.0" prefHeight="34.0" prefWidth="148.0" text="DASHBOARD" textFill="#fa8c0a">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="134.0" fitWidth="148.0" layoutX="31.0" layoutY="64.0" onMouseClicked="#doPapers" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="148.0" layoutX="431.0" layoutY="64.0" onMouseClicked="#doCustomers" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="148.0" layoutX="231.0" layoutY="64.0" onMouseClicked="#doHawkers" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="148.0" layoutX="31.0" layoutY="238.0" onMouseClicked="#doBillGenerator" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="148.0" layoutX="431.0" layoutY="238.0" onMouseClicked="#doRecords" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="148.0" layoutX="231.0" layoutY="238.0" onMouseClicked="#doBillCollector" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="77.0" layoutY="200.0" text="Papers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="200.0" text="Hawkers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="200.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="372.0" text="Bill Generator">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="372.0" text="Bill Collector">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="472.0" layoutY="362.0" text="Records">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="134.0" layoutX="233.0" layoutY="412.0" onMouseClicked="#doLogout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(1).jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

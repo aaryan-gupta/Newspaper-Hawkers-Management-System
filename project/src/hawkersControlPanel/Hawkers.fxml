@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="570.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hawkersControlPanel.Hawkers">
+   <children>
+      <Label layoutX="167.0" layoutY="38.0" text="HAWKER'S CONTROL PANEL" textFill="#ff0606">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="110.0" text="Name" />
+      <Button layoutX="435.0" layoutY="106.0" mnemonicParsing="false" onAction="#doBtnSearch" text="Search" />
+      <TextField fx:id="txtMobile" layoutX="34.0" layoutY="188.0" />
+      <Label layoutX="67.0" layoutY="171.0" text="Mobile Number" />
+      <TextField fx:id="txtSalary" layoutX="387.0" layoutY="188.0" />
+      <Label layoutX="448.0" layoutY="171.0" text="Salary" />
+      <Label layoutX="93.0" layoutY="242.0" text="Areas" />
+      <ListView fx:id="listAreas" layoutX="34.0" layoutY="259.0" prefHeight="83.0" prefWidth="149.0" />
+      <Label layoutX="426.0" layoutY="242.0" text="Aadhaar Card" />
+      <Button fx:id="btnChoosePic" layoutX="425.0" layoutY="345.0" mnemonicParsing="false" onAction="#doBtnChoosePic" text="Choose Pic" />
+      <Label layoutX="262.0" layoutY="242.0" text="Address" />
+      <Button layoutX="223.0" layoutY="414.0" mnemonicParsing="false" onAction="#doBtnSave" text="Save" />
+      <Button layoutX="293.0" layoutY="414.0" mnemonicParsing="false" onAction="#doBtnUpdate" text="Update" />
+      <Button layoutX="374.0" layoutY="414.0" mnemonicParsing="false" onAction="#doBtnRemove" text="Remove" />
+      <Label fx:id="lblSave" layoutX="223.0" layoutY="439.0" prefHeight="17.0" prefWidth="41.0" />
+      <Label fx:id="lblUpdate" layoutX="293.0" layoutY="439.0" prefHeight="17.0" prefWidth="55.0" />
+      <Label fx:id="lblRemove" layoutX="374.0" layoutY="439.0" prefHeight="17.0" prefWidth="59.0" />
+      <ComboBox fx:id="comboHawkerName" editable="true" layoutX="213.0" layoutY="106.0" onMouseClicked="#doComboHawkerName" prefWidth="150.0" />
+      <Label fx:id="lblPicPath" alignment="CENTER_RIGHT" layoutX="263.0" layoutY="370.0" prefHeight="17.0" prefWidth="320.0" />
+      <TextArea fx:id="txtAddress" layoutX="213.0" layoutY="259.0" prefHeight="83.0" prefWidth="141.0" />
+      <Label fx:id="lblSearch" layoutX="493.0" layoutY="110.0" prefHeight="17.0" prefWidth="52.0" />
+      <Button layoutX="460.0" layoutY="414.0" mnemonicParsing="false" onAction="#doBtnClear" text="Clear" />
+      <Label fx:id="lblAreas" layoutX="34.0" layoutY="346.0" prefHeight="17.0" prefWidth="320.0" />
+      <BorderPane layoutX="390.0" layoutY="259.0" prefHeight="83.0" prefWidth="149.0" style="-fx-border-style: solid; -fx-border-radius: 10;">
+         <center>
+            <ImageView fx:id="preview" fitHeight="68.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <ListView fx:id="listAreasShow" layoutX="34.0" layoutY="370.0" prefHeight="83.0" prefWidth="149.0" />
+      <Label fx:id="lblError" alignment="CENTER" layoutX="224.0" layoutY="471.0" prefHeight="17.0" prefWidth="279.0" />
+   </children>
+</AnchorPane>

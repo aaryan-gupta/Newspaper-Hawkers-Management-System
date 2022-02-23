@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customers.Customers">
+   <children>
+      <Label layoutX="202.0" layoutY="10.0" text="Customer Manager" textFill="#00bbff">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="59.0" text="Name" />
+      <TextField fx:id="txtName" layoutX="111.0" layoutY="76.0" />
+      <TextField fx:id="txtMobile" layoutX="330.0" layoutY="76.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button layoutX="516.0" layoutY="67.0" mnemonicParsing="false" onAction="#doBtnSearch" text="Search" />
+      <Label layoutX="330.0" layoutY="59.0" text="Mobile Number" />
+      <Label layoutX="111.0" layoutY="119.0" text="Address" />
+      <Label fx:id="lblSearch" layoutX="516.0" layoutY="93.0" prefHeight="17.0" prefWidth="52.0" />
+      <TextArea fx:id="listAddress" layoutX="111.0" layoutY="136.0" prefHeight="91.0" prefWidth="149.0" />
+      <Label layoutX="330.0" layoutY="119.0" text="Select Area" />
+      <ComboBox fx:id="comboArea" layoutX="330.0" layoutY="136.0" onAction="#doComboArea" prefWidth="149.0" />
+      <Label layoutX="330.0" layoutY="182.0" text="Hawker Name" />
+      <Label fx:id="lblHawker" layoutX="330.0" layoutY="199.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="113.0" layoutY="245.0" text="Paper" />
+      <ListView fx:id="listPaper" layoutX="111.0" layoutY="262.0" onMouseClicked="#doListPaper" prefHeight="91.0" prefWidth="149.0" />
+      <Label layoutX="330.0" layoutY="245.0" text="Price" />
+      <ListView fx:id="listPrice" layoutX="330.0" layoutY="262.0" prefHeight="91.0" prefWidth="149.0" />
+      <Button layoutX="132.0" layoutY="424.0" mnemonicParsing="false" onAction="#doBtnClear" text="Clear" />
+      <Label fx:id="lblClear" layoutX="132.0" layoutY="449.0" prefHeight="17.0" prefWidth="52.0" />
+      <Button layoutX="212.0" layoutY="424.0" mnemonicParsing="false" onAction="#doBtnSave" text="Save" />
+      <Label fx:id="lblSave" layoutX="212.0" layoutY="449.0" prefHeight="17.0" prefWidth="52.0" />
+      <Button layoutX="289.0" layoutY="424.0" mnemonicParsing="false" onAction="#doBtnUpdate" text="Update" />
+      <Label fx:id="lblUpdate" layoutX="289.0" layoutY="449.0" prefHeight="17.0" prefWidth="52.0" />
+      <Button layoutX="379.0" layoutY="424.0" mnemonicParsing="false" onAction="#doBtnRemove" text="Remove" />
+      <Label fx:id="lblRemove" layoutX="379.0" layoutY="449.0" prefHeight="17.0" prefWidth="52.0" />
+      <Label fx:id="lblPapers" layoutX="111.0" layoutY="353.0" prefHeight="17.0" prefWidth="368.0" />
+      <Label fx:id="lblError" alignment="CENTER" layoutX="111.0" layoutY="380.0" prefHeight="17.0" prefWidth="368.0" />
+      <Button layoutX="493.0" layoutY="295.0" mnemonicParsing="false" onAction="#doClearPapers" text="Reselect Papers" />
+   </children>
+</AnchorPane>
